@@ -132,3 +132,45 @@ audio{
 @keyframes nxt {
     50%{transform: scale(1.5, 1.5)}
 }
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+    /* Stack image and lyrics vertically */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make the left panel fit the screen */
+    #rotatingCircle {
+        width: 100%;
+        height: auto;
+        border: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Shrink the spinning disc */
+    .spinDisc {
+        width: 250px;
+    }
+
+    /* Make audio player fit screen */
+    audio {
+        width: 90%;
+    }
+
+    /* Make lyrics panel fit screen */
+    .Lyrics {
+        width: 90%;
+        box-sizing: border-box;
+        margin: 10px auto;
+    }
+
+    /* Fix prev/next buttons */
+    .bastaamona {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
