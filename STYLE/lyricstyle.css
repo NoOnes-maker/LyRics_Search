@@ -82,3 +82,41 @@ h3{
     50%{transform: scale(1.5, 1.5)}
 }
 /*FOOTER*/
+
+
+
+/* RESPONSIVE MOBILE FIX */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    #myimg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .container_row1,
+    .container_row2,
+    .container_row3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin: 10px;
+        justify-items: center;
+    }
+
+    .songdesc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cover {
+        width: 100%;
+    }
+}
