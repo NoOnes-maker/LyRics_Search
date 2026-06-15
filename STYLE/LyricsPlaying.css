@@ -1,0 +1,134 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(134, 56, 39);
+}
+#rotatingCircle{
+    display: flex;
+    height: 850px;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid greenyellow;
+    
+}
+
+/*Rotating disc */
+.spinDisc{
+    border-radius: 100%;
+    width: 400px;
+    animation-name: circ; 
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: (linear);
+}
+
+/*audio controls*/
+audio{
+    width: 500px;
+    filter: invert(1);
+}
+
+/*Container of rotaitng circle and Lyrics*/
+.container{
+    display: flex;
+    flex-direction:row;
+}
+
+.Lyrics{
+    display: flex;
+    border: 3px solid greenyellow;
+    width: 600px;
+    padding: 10px;
+    color: rgba(240, 248, 255, 0.719);
+    font-weight: bold;
+    
+}
+
+/*container of previous and next buttons*/
+.bastaamona{
+    margin-top: 50px;
+    border: 3px solid white;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+/*previous button*/
+.prev{
+    display: flex;
+    align-items: center ;
+}
+.prev:hover{
+    display: flex;
+    align-items: center;
+    animation-name: prev;
+    animation-iteration-count: 2;
+    animation-timing-function: (linear);
+    animation-duration: 5s;
+}
+.prev a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.prev img{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+}
+
+
+/*next button*/
+.nxt{
+    display: flex;
+    align-items: center;
+}
+.nxt:hover{
+    display: flex;
+    align-items: center;
+    animation-name: nxt;
+    animation-iteration-count: 2;
+    animation-timing-function: (linear);
+    animation-duration: 5s;
+}
+.nxt a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.nxt img{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+}
+
+#rotatingCircle p{
+    font-size:x-large;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.MainMenu{
+    font-size: 100px;
+}
+/*Animation Section*/
+@keyframes circ {
+    100%{transform: rotateZ(360deg)}
+}
+@keyframes prev {
+    50%{transform: scale(1.5, 1.5)}
+}
+@keyframes nxt {
+    50%{transform: scale(1.5, 1.5)}
+}

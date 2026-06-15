@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(64, 36, 36);
+}
+/*LOGO*/
+#myimg{
+    border: 3px solid;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+#myimg:hover{
+    border: solid blue;
+}
+
+/*HEADER*/
+header{
+    text-align: center  ;
+}
+header h1{
+    font-size: 60px;
+    color:rgb(124, 190, 248)
+}
+header h2{
+    color: rgb(147, 208, 115);
+}
+
+/*MAIN*/
+h3{
+    font-size: 40px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.container_row1{
+    display: flex;
+    gap: 130px;
+    color: aliceblue;
+    margin: 10px;
+    justify-content: center;
+}
+
+.container_row2{
+    display: flex;
+    gap: 130px;
+    color: aliceblue;
+    margin: 10px;
+    justify-content: center;
+}
+
+.container_row3{
+    display: flex;
+    gap: 130px;
+    color: aliceblue;
+    margin: 10px;
+    justify-content: center;
+}
+
+.songdesc{
+  border: 3px solid blue;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: rgb(95, 52, 52);
+}
+
+.songdesc:hover{
+    background-color: rgb(236, 236, 236);
+    color: rgb(8, 42, 233);
+    animation-name:ballsUP ;
+    animation-duration: 2s;
+}
+.cover{
+    width: 150px;
+    border-radius: 20px;
+}
+
+/*ANIMATION SECTION*/
+@keyframes ballsUP{
+    50%{transform: scale(1.5, 1.5)}
+}
+/*FOOTER*/
